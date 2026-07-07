@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="820" height="512" viewBox="0 0 820 512" font-family="'SFMono-Regular',Consolas,Menlo,'Noto Sans Mono CJK JP',monospace" font-size="12.5">
+  <rect width="820" height="512" rx="10" fill="#16161e"/>
+  <circle cx="24" cy="22" r="6" fill="#f7768e"/>
+  <circle cx="44" cy="22" r="6" fill="#e0af68"/>
+  <circle cx="64" cy="22" r="6" fill="#9ece6a"/>
+  <text x="410" y="26" fill="#565f89" text-anchor="middle" font-size="12">yahoo-transit-mcp — smoke test（実行結果）</text>
+  <text x="24" y="60" fill="#7aa2f7">$ npm run smoke</text>
+  <text x="24" y="88" fill="#e0af68">1) 経路検索: 東京→大阪</text>
+  <text x="24" y="108" fill="#9ece6a">  ✔ 経路が1件以上 ／ 運賃あり ／ 区間(legs)が1つ以上 ／ 先頭legに路線名</text>
+  <text x="24" y="128" fill="#c0caf5">  → 06:00発 08:40着 2時間40分 13,870円 乗換1回</text>
+  <text x="24" y="148" fill="#565f89">  → {"from":"東京","fromTime":"06:00","line":"ＪＲ新幹線のぞみ1号","to":"新大阪",</text>
+  <text x="24" y="168" fill="#565f89">     "toTime":"08:22","platform":{"departure":"14番線","arrival":"21番線"}, …}</text>
+  <text x="24" y="196" fill="#e0af68">2) 終電検索: 新宿→横浜 (mode=last_train)</text>
+  <text x="24" y="216" fill="#9ece6a">  ✔ 終電の経路あり</text>
+  <text x="24" y="236" fill="#c0caf5">  → 23:46発 00:37着</text>
+  <text x="24" y="264" fill="#e0af68">3) 運行情報: 関東</text>
+  <text x="24" y="284" fill="#c0caf5">  → 7月8日 5時50分 / 異常1件</text>
+  <text x="24" y="304" fill="#c0caf5">  → 上越線[高崎～水上]: 列車遅延・一部</text>
+  <text x="24" y="332" fill="#e0af68">4) 駅解決: 新宿</text>
+  <text x="24" y="352" fill="#c0caf5">  → 新宿(22741), 新宿(東京メトロ)(29342), 高田馬場(22790), 市ケ谷(22520), …</text>
+  <text x="24" y="380" fill="#e0af68">5) 時刻表: 東京駅・東海道新幹線（平日）</text>
+  <text x="24" y="400" fill="#c0caf5">  → {"time":"06:00","type":"のぞみ","destination":"博多","trainName":"のぞみ1号","track":"14番線"}</text>
+  <text x="24" y="420" fill="#c0caf5">  → {"time":"06:06","type":"のぞみ","destination":"博多","trainName":"のぞみ111号","track":"19番線"}</text>
+  <text x="24" y="440" fill="#c0caf5">  → {"time":"06:09","type":"のぞみ","destination":"新大阪","trainName":"のぞみ303号","track":"16番線"}</text>
+  <text x="24" y="476" fill="#9ece6a" font-weight="bold">ALL OK</text>
+</svg>

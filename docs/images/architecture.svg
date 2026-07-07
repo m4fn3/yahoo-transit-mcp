@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="840" height="250" viewBox="0 0 840 250" font-family="-apple-system,'Segoe UI','Noto Sans JP',sans-serif" font-size="13">
+  <rect width="840" height="250" rx="10" fill="#ffffff" stroke="#e5e7eb"/>
+  <defs>
+    <marker id="ah" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0 0L10 5L0 10z" fill="#6b7280"/>
+    </marker>
+  </defs>
+  <rect x="24" y="90" width="140" height="120" rx="8" fill="#dbeafe" stroke="#2563eb"/>
+  <text x="94" y="135" fill="#1e3a8a" text-anchor="middle" font-weight="600">MCPクライアント</text>
+  <text x="94" y="158" fill="#1e40af" text-anchor="middle" font-size="11.5">Claude Code /</text>
+  <text x="94" y="175" fill="#1e40af" text-anchor="middle" font-size="11.5">Claude Desktop</text>
+  <rect x="290" y="90" width="240" height="120" rx="8" fill="#f3f4f6" stroke="#6b7280"/>
+  <text x="410" y="115" fill="#111827" text-anchor="middle" font-weight="600">yahoo-transit-mcp</text>
+  <text x="410" y="140" fill="#4b5563" text-anchor="middle" font-size="11.5">直列アクセス＋1.5秒間隔</text>
+  <text x="410" y="158" fill="#4b5563" text-anchor="middle" font-size="11.5">15分キャッシュ</text>
+  <text x="410" y="176" fill="#4b5563" text-anchor="middle" font-size="11.5">__NEXT_DATA__ からJSON抽出</text>
+  <rect x="656" y="90" width="140" height="120" rx="8" fill="#ccfbf1" stroke="#0d9488"/>
+  <text x="726" y="130" fill="#134e4a" text-anchor="middle" font-weight="600">Yahoo!乗換案内</text>
+  <text x="726" y="153" fill="#115e59" text-anchor="middle" font-size="11">transit.yahoo.co.jp</text>
+  <text x="726" y="171" fill="#115e59" text-anchor="middle" font-size="11">公開ページ (SSR)</text>
+  <line x1="164" y1="120" x2="286" y2="120" stroke="#6b7280" stroke-width="1.5" marker-end="url(#ah)"/>
+  <text x="225" y="108" fill="#374151" text-anchor="middle" font-size="11.5">ツール呼び出し</text>
+  <text x="225" y="138" fill="#9ca3af" text-anchor="middle" font-size="10.5">JSON-RPC / stdio</text>
+  <line x1="530" y1="120" x2="652" y2="120" stroke="#6b7280" stroke-width="1.5" marker-end="url(#ah)"/>
+  <text x="591" y="108" fill="#374151" text-anchor="middle" font-size="11.5">HTTPS GET</text>
+  <text x="591" y="138" fill="#9ca3af" text-anchor="middle" font-size="10.5">通常のページ取得</text>
+  <line x1="656" y1="180" x2="534" y2="180" stroke="#6b7280" stroke-width="1.5" marker-end="url(#ah)"/>
+  <text x="595" y="202" fill="#374151" text-anchor="middle" font-size="11.5">HTML（JSON同梱）</text>
+  <line x1="290" y1="180" x2="168" y2="180" stroke="#6b7280" stroke-width="1.5" marker-end="url(#ah)"/>
+  <text x="229" y="202" fill="#374151" text-anchor="middle" font-size="11.5">整形したJSON</text>
+</svg>
