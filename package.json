@@ -23,7 +23,7 @@
     "prepare": "tsc"
   },
   "engines": {
-    "node": ">=18"
+    "node": ">=20.18.1"
   },
   "dependencies": {
     "@modelcontextprotocol/sdk": "^1.12.0",

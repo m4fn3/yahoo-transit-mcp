@@ -2,7 +2,7 @@
 
 [![CI](https://github.com/m4fn3/yahoo-transit-mcp/actions/workflows/ci.yml/badge.svg)](https://github.com/m4fn3/yahoo-transit-mcp/actions/workflows/ci.yml)
 [![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
-[![Node.js >=18](https://img.shields.io/badge/node-%3E%3D18-brightgreen.svg)](package.json)
+[![Node.js >=20.18](https://img.shields.io/badge/node-%3E%3D20.18-brightgreen.svg)](package.json)
 
 [Yahoo!乗換案内](https://transit.yahoo.co.jp/) の**非公式** MCP（Model Context Protocol）サーバーです。Claude Code / Claude Desktop などのMCPクライアントから、日本の電車の**経路検索・終電・運行情報・駅時刻表**を調べられるようになります。
 
@@ -26,7 +26,7 @@
 
 ## クイックスタート
 
-Node.js 18以上が必要です。
+Node.js 20.18以上が必要です（依存の cheerio 1.x が Node 18 では動作しないため）。
 
 ### Claude Code
 
@@ -260,6 +260,7 @@ CIでは lint / build / test を実行します。テストのフィクスチャ
 - 番線「情報なし」を未設定として扱うよう修正
 - 新ツール `suggest_place`
 - `npm test`（node:test・保存済みフィクスチャ）を追加し、CIで実行
+- 動作要件を Node.js 20.18 以上に修正（cheerio 1.x / undici 7 の要件。Node 18 では起動時に `File is not defined` で落ちていた）。CIは Node 20/22/24
 
 既存のパラメータと返り値のフィールドはそのまま残しています。
 
