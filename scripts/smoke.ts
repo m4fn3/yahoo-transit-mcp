@@ -1,11 +1,12 @@
 /**
  * スモークテスト: 実際のYahoo!乗換案内に対してスクレイパーを直接呼ぶ。
  * 実行: npm run smoke
- * 共有レートリミッタにより直列・約1.5s間隔で ~6リクエスト。
+ * 共有レートリミッタにより直列・約1.5s間隔で ~8リクエスト。
  */
 import { searchRoute } from "../src/scrapers/route.js";
 import { getTrainStatus } from "../src/scrapers/diainfo.js";
 import { getTimetable, resolveStation } from "../src/scrapers/timetable.js";
+import { suggestPlace } from "../src/scrapers/suggest.js";
 
 let failed = 0;
 
@@ -38,6 +39,21 @@ async function main() {
   const r2 = await searchRoute({ from: "新宿", to: "横浜", mode: "last_train" });
   check("終電の経路あり", r2.routes.length >= 1, r2);
   if (r2.routes[0]) console.log(`  → ${r2.routes[0].depart}発 ${r2.routes[0].arrive}着`);
+
+  console.log("2b) 地点候補: 東京タワー");
+  const places = await suggestPlace("東京タワー");
+  check("候補が1件以上・座標あり", places.length >= 1 && places.some((p) => p.lat !== undefined), places);
+  console.log(`  → ${places.slice(0, 3).map((p) => `${p.name}[${p.kind}]`).join(", ")}`);
+
+  console.log("2c) 施設→施設・到着指定: 東京タワー→東京スカイツリー");
+  const tomorrow = new Date(Date.now() + 9 * 3_600_000 + 86_400_000).toISOString().slice(0, 10);
+  const r3 = await searchRoute({ from: "東京タワー", to: "東京スカイツリー", arriveBy: `${tomorrow}T10:00`, maxRoutes: 3 });
+  check("経路が1〜3件", r3.routes.length >= 1 && r3.routes.length <= 3, r3);
+  check("到着が10:00以前", r3.routes.every((x) => x.arrive <= "10:00"), r3.routes);
+  check("出発側の徒歩あり", (r3.routes[0]?.walkStartMin ?? 0) > 0, r3.routes[0]);
+  const train = r3.routes[0]?.legs.find((l) => l.mode === "train");
+  check("鉄道区間に行き先・途中停車駅", !!train?.destination && (train?.stops?.length ?? 0) > 0, train);
+  if (r3.routes[0]) console.log(`  → ${r3.routes[0].depart}発 ${r3.routes[0].arrive}着 徒歩${r3.routes[0].walkStartMin}+${r3.routes[0].walkEndMin}分`);
 
   console.log("3) 運行情報: 関東");
   const d = await getTrainStatus({ area: "関東" });

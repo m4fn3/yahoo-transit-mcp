@@ -1,6 +1,6 @@
 {
   "name": "yahoo-transit-mcp",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Unofficial MCP server for Yahoo! Transit (transit.yahoo.co.jp) — 経路検索・終電・運行情報・駅時刻表",
   "type": "module",
   "license": "MIT",
@@ -17,6 +17,7 @@
   "scripts": {
     "build": "tsc",
     "lint": "tsc --noEmit",
+    "test": "tsx --test test/*.test.ts",
     "smoke": "tsx scripts/smoke.ts",
     "start": "node dist/index.js",
     "prepare": "tsc"

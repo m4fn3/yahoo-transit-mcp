@@ -5,10 +5,13 @@ import { z } from "zod";
 import { searchRoute } from "./scrapers/route.js";
 import { AREA_IDS, getTrainStatus } from "./scrapers/diainfo.js";
 import { getTimetable, listDirections, resolveStation } from "./scrapers/timetable.js";
+import { suggestPlace } from "./scrapers/suggest.js";
+
+const latLon = z.object({ lat: z.number().min(-90).max(90), lon: z.number().min(-180).max(180) });
 
 const server = new McpServer({
   name: "transit-yahoo",
-  version: "0.1.0",
+  version: "0.2.0",
 });
 
 function ok(data: unknown) {
@@ -25,10 +28,14 @@ server.registerTool(
   {
     title: "経路検索（Yahoo!乗換案内）",
     description:
-      "出発地から目的地までの電車経路を検索する。時刻・所要時間・運賃・乗換回数・各区間の路線と番線を返す。終電は mode=last_train、始発は mode=first_train。",
+      "出発地から目的地までの電車経路を検索する。出発地・目的地は駅名のほか住所・施設名・座標も可（駅までの徒歩を含む）。時刻・所要時間・運賃・乗換回数・前後の徒歩分数と、各区間の路線・種別・行き先・番線・乗車位置・途中停車駅を返す。到着時刻指定は arriveBy、出発時刻指定は departAt（または mode + date/time）。終電は mode=last_train、始発は mode=first_train。",
     inputSchema: {
-      from: z.string().describe("出発駅・地名（例: 東京、渋谷）"),
-      to: z.string().describe("到着駅・地名"),
+      from: z.string().describe("出発地: 駅名・住所・施設名（例: 東京、東京タワー、東京都港区芝公園4丁目2-8）"),
+      to: z.string().describe("目的地: 駅名・住所・施設名"),
+      fromLatLon: latLon
+        .optional()
+        .describe("出発地の座標 {lat, lon}（suggest_place の結果など）。from は表示名になる"),
+      toLatLon: latLon.optional().describe("目的地の座標 {lat, lon}。to は表示名になる"),
       via: z.array(z.string()).max(3).optional().describe("経由駅（最大3つ）"),
       date: z
         .string()
@@ -44,6 +51,15 @@ server.registerTool(
         .enum(["departure", "arrival", "first_train", "last_train"])
         .default("departure")
         .describe("departure=出発時刻指定 / arrival=到着時刻指定 / first_train=始発 / last_train=終電"),
+      arriveBy: z
+        .string()
+        .optional()
+        .describe("この日時までに着く（ISO 8601、例: 2026-10-20T10:00+09:00。省略時のタイムゾーンはJST）。mode/date/time より優先"),
+      departAt: z
+        .string()
+        .optional()
+        .describe("この日時以降に出発（ISO 8601）。mode/date/time より優先。arriveBy と同時指定不可"),
+      maxRoutes: z.number().int().min(1).max(10).optional().describe("返す経路の最大件数（省略時は全件）"),
       sort: z
         .enum(["time", "fare", "transfers"])
         .default("time")
@@ -58,6 +74,25 @@ server.registerTool(
   async (args) => {
     try {
       return ok(await searchRoute(args));
+    } catch (e) {
+      return fail(e);
+    }
+  },
+);
+
+server.registerTool(
+  "suggest_place",
+  {
+    title: "地点候補（駅・バス停・施設）",
+    description:
+      "入力途中の地名から、駅・バス停・施設の候補を座標つきで返す（サイトの検索窓の入力補完と同じもの）。施設名が曖昧なときに使い、選んだ候補の name と lat/lon を search_route の from/fromLatLon（to/toLatLon）に渡す。",
+    inputSchema: {
+      query: z.string().min(1).max(100).describe("地名・施設名・駅名の一部（例: 東京タワー）"),
+    },
+  },
+  async (args) => {
+    try {
+      return ok({ candidates: await suggestPlace(args.query) });
     } catch (e) {
       return fail(e);
     }

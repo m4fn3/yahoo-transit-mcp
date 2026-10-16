@@ -1,0 +1,41 @@
+{
+ "@firstResultPosition": 1,
+ "@query": "東京タワー",
+ "@totalResultsAvailable": 21,
+ "@totalResultsReturned": 21,
+ "Result": [
+  {
+   ".Src": "0",
+   "Address": "東京",
+   "Code": "36860",
+   "Gid": "",
+   "Id": "bu",
+   "Lat": "35.65828654800366",
+   "Lon": "139.7460244251276",
+   "Suggest": "東京タワー(終点)/都営バス",
+   "Yomi": "トウキョウタワー"
+  },
+  {
+   ".Src": "1",
+   "Address": "東京都港区芝公園4-2-8東京タワー大展望台内",
+   "Code": "",
+   "Gid": "TA-TitysTgc",
+   "Id": "la",
+   "Lat": "35.658607482910156",
+   "Lon": "139.7454376220703",
+   "Suggest": "東京タワー大神宮",
+   "Yomi": ""
+  },
+  {
+   ".Src": "1",
+   "Address": "東京都千代田区内幸町1丁目1-1",
+   "Code": "",
+   "Gid": "rzhxvkJqkHE",
+   "Id": "la",
+   "Lat": "35.67183303833008",
+   "Lon": "139.75946044921875",
+   "Suggest": "帝国ホテルタワー",
+   "Yomi": ""
+  }
+ ]
+}

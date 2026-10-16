@@ -1,0 +1,411 @@
+{
+ "featureInfoList": [
+  {
+   "summaryInfo": {
+    "departureTime": "10:00",
+    "arrivalTime": "10:29",
+    "totalTime": "29分",
+    "transferCount": "1"
+   },
+   "edgeInfoList": [
+    {
+     "isLandmark": true,
+     "ridingPositionInfo": null,
+     "diaInfoStatus": null,
+     "stationName": "東京都港区芝公園4丁目2-8",
+     "railNameExcludingDestination": "徒歩8分",
+     "railName": "徒歩8分",
+     "stopStationList": null,
+     "destination": null,
+     "timeInfo": [
+      {
+       "time": "10:00",
+       "type": 3
+      }
+     ]
+    },
+    {
+     "isLandmark": false,
+     "ridingPositionInfo": {
+      "departure": [
+       "1",
+       "番線"
+      ],
+      "arrival": [
+       "1",
+       "番線"
+      ],
+      "position": [
+       "[7両] 中 後"
+      ]
+     },
+     "diaInfoStatus": [],
+     "stationName": "神谷町",
+     "railNameExcludingDestination": "東京メトロ日比谷線",
+     "railName": "東京メトロ日比谷線・中目黒行",
+     "stopStationList": [
+      {
+       "name": "六本木",
+       "departureTime": "10:14"
+      },
+      {
+       "name": "広尾",
+       "departureTime": "10:17"
+      }
+     ],
+     "destination": "中目黒行",
+     "timeInfo": [
+      {
+       "time": "10:08",
+       "type": 2
+      },
+      {
+       "time": "10:11",
+       "type": 1
+      }
+     ]
+    },
+    {
+     "isLandmark": false,
+     "ridingPositionInfo": {
+      "departure": [
+       "3",
+       "番線"
+      ],
+      "arrival": [
+       "3",
+       "番線"
+      ],
+      "position": []
+     },
+     "diaInfoStatus": [],
+     "stationName": "恵比寿",
+     "railNameExcludingDestination": "ＪＲ湘南新宿ライン快速",
+     "railName": "ＪＲ湘南新宿ライン快速・宇都宮行",
+     "stopStationList": [],
+     "destination": "宇都宮行",
+     "timeInfo": [
+      {
+       "time": "10:20",
+       "type": 2
+      },
+      {
+       "time": "10:27",
+       "type": 1
+      }
+     ]
+    },
+    {
+     "isLandmark": false,
+     "ridingPositionInfo": {
+      "departure": [
+       "3",
+       "番線"
+      ],
+      "arrival": [
+       "3",
+       "番線"
+      ],
+      "position": []
+     },
+     "diaInfoStatus": [],
+     "stationName": "渋谷",
+     "railNameExcludingDestination": "ＪＲ湘南新宿ライン快速",
+     "railName": "ＪＲ湘南新宿ライン快速・宇都宮行",
+     "stopStationList": [],
+     "destination": "宇都宮行",
+     "timeInfo": [
+      {
+       "time": "10:29",
+       "type": 3
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "summaryInfo": {
+    "departureTime": "10:00",
+    "arrivalTime": "10:30",
+    "totalTime": "30分",
+    "transferCount": "1"
+   },
+   "edgeInfoList": [
+    {
+     "isLandmark": true,
+     "ridingPositionInfo": null,
+     "diaInfoStatus": null,
+     "stationName": "東京都港区芝公園4丁目2-8",
+     "railNameExcludingDestination": "徒歩8分",
+     "railName": "徒歩8分",
+     "stopStationList": null,
+     "destination": null,
+     "timeInfo": [
+      {
+       "time": "10:00",
+       "type": 3
+      }
+     ]
+    },
+    {
+     "isLandmark": false,
+     "ridingPositionInfo": {
+      "departure": [
+       "1",
+       "番線"
+      ],
+      "arrival": [
+       "2",
+       "番線"
+      ],
+      "position": [
+       "[7両] 前 中"
+      ]
+     },
+     "diaInfoStatus": [],
+     "stationName": "神谷町",
+     "railNameExcludingDestination": "東京メトロ日比谷線",
+     "railName": "東京メトロ日比谷線・中目黒行",
+     "stopStationList": [
+      {
+       "name": "六本木",
+       "departureTime": "10:14"
+      },
+      {
+       "name": "広尾",
+       "departureTime": "10:17"
+      },
+      {
+       "name": "恵比寿",
+       "departureTime": "10:20"
+      }
+     ],
+     "destination": "中目黒行",
+     "timeInfo": [
+      {
+       "time": "10:08",
+       "type": 2
+      },
+      {
+       "time": "10:11",
+       "type": 1
+      }
+     ]
+    },
+    {
+     "isLandmark": false,
+     "ridingPositionInfo": {
+      "departure": [
+       "4",
+       "番線"
+      ],
+      "arrival": [
+       null,
+       "情報なし"
+      ],
+      "position": []
+     },
+     "diaInfoStatus": [],
+     "stationName": "中目黒",
+     "railNameExcludingDestination": "東急東横線急行",
+     "railName": "東急東横線急行・渋谷行",
+     "stopStationList": [],
+     "destination": "渋谷行",
+     "timeInfo": [
+      {
+       "time": "10:22",
+       "type": 2
+      },
+      {
+       "time": "10:26",
+       "type": 1
+      }
+     ]
+    },
+    {
+     "isLandmark": false,
+     "ridingPositionInfo": {
+      "departure": [
+       "4",
+       "番線"
+      ],
+      "arrival": [
+       null,
+       "情報なし"
+      ],
+      "position": []
+     },
+     "diaInfoStatus": [],
+     "stationName": "渋谷",
+     "railNameExcludingDestination": "東急東横線急行",
+     "railName": "東急東横線急行・渋谷行",
+     "stopStationList": [],
+     "destination": "渋谷行",
+     "timeInfo": [
+      {
+       "time": "10:30",
+       "type": 3
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "summaryInfo": {
+    "departureTime": "10:02",
+    "arrivalTime": "10:34",
+    "totalTime": "32分",
+    "transferCount": "1"
+   },
+   "edgeInfoList": [
+    {
+     "isLandmark": true,
+     "ridingPositionInfo": null,
+     "diaInfoStatus": null,
+     "stationName": "東京都港区芝公園4丁目2-8",
+     "railNameExcludingDestination": "徒歩7分",
+     "railName": "徒歩7分",
+     "stopStationList": null,
+     "destination": null,
+     "timeInfo": [
+      {
+       "time": "10:02",
+       "type": 3
+      }
+     ]
+    },
+    {
+     "isLandmark": false,
+     "ridingPositionInfo": {
+      "departure": [
+       "2",
+       "番線"
+      ],
+      "arrival": [
+       "2",
+       "番線"
+      ],
+      "position": [
+       "[8両] 中 後"
+      ]
+     },
+     "diaInfoStatus": [],
+     "stationName": "赤羽橋",
+     "railNameExcludingDestination": "都営大江戸線",
+     "railName": "都営大江戸線・六本木・都庁前方面",
+     "stopStationList": [
+      {
+       "name": "麻布十番",
+       "departureTime": "10:17"
+      },
+      {
+       "name": "六本木",
+       "departureTime": "10:19"
+      }
+     ],
+     "destination": "六本木・都庁前方面",
+     "timeInfo": [
+      {
+       "time": "10:09",
+       "type": 2
+      },
+      {
+       "time": "10:15",
+       "type": 1
+      }
+     ]
+    },
+    {
+     "isLandmark": false,
+     "ridingPositionInfo": {
+      "departure": [
+       "3",
+       "番線"
+      ],
+      "arrival": [
+       "1",
+       "番線"
+      ],
+      "position": []
+     },
+     "diaInfoStatus": [],
+     "stationName": "青山一丁目",
+     "railNameExcludingDestination": "東京メトロ半蔵門線急行",
+     "railName": "東京メトロ半蔵門線急行・中央林間行",
+     "stopStationList": [
+      {
+       "name": "表参道",
+       "departureTime": "10:32"
+      }
+     ],
+     "destination": "中央林間行",
+     "timeInfo": [
+      {
+       "time": "10:21",
+       "type": 2
+      },
+      {
+       "time": "10:29",
+       "type": 1
+      }
+     ]
+    },
+    {
+     "isLandmark": false,
+     "ridingPositionInfo": {
+      "departure": [
+       "3",
+       "番線"
+      ],
+      "arrival": [
+       "1",
+       "番線"
+      ],
+      "position": []
+     },
+     "diaInfoStatus": [],
+     "stationName": "渋谷",
+     "railNameExcludingDestination": "東京メトロ半蔵門線急行",
+     "railName": "東京メトロ半蔵門線急行・中央林間行",
+     "stopStationList": [
+      {
+       "name": "表参道",
+       "departureTime": "10:32"
+      }
+     ],
+     "destination": "中央林間行",
+     "timeInfo": [
+      {
+       "time": "10:34",
+       "type": 3
+      }
+     ]
+    }
+   ]
+  }
+ ],
+ "otherQueryInfo": {
+  "fromList": [
+   {
+    "value": "35.6586,139.7454,東京都港区芝公園4丁目2-8",
+    "label": "東京都港区芝公園4丁目2-8",
+    "gid": "",
+    "name": "東京都港区芝公園4丁目2-8"
+   }
+  ],
+  "toList": [
+   {
+    "value": ",,22715",
+    "label": "渋谷駅",
+    "gid": "",
+    "name": "渋谷"
+   },
+   {
+    "value": ",,23155",
+    "label": "高座渋谷駅",
+    "gid": "",
+    "name": "高座渋谷"
+   }
+  ]
+ }
+}

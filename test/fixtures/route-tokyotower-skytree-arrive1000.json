@@ -1,0 +1,468 @@
+{
+ "featureInfoList": [
+  {
+   "summaryInfo": {
+    "departureTime": "09:21",
+    "arrivalTime": "09:59",
+    "totalTime": "38分",
+    "transferCount": "0"
+   },
+   "edgeInfoList": [
+    {
+     "isLandmark": true,
+     "ridingPositionInfo": null,
+     "diaInfoStatus": null,
+     "stationName": "東京タワー",
+     "railNameExcludingDestination": "徒歩11分",
+     "railName": "徒歩11分",
+     "stopStationList": null,
+     "destination": null,
+     "timeInfo": [
+      {
+       "time": "09:21",
+       "type": 3
+      }
+     ]
+    },
+    {
+     "isLandmark": false,
+     "ridingPositionInfo": {
+      "departure": [
+       "2",
+       "番線"
+      ],
+      "arrival": [
+       "2",
+       "番線"
+      ],
+      "position": [
+       "[8両] 前"
+      ]
+     },
+     "diaInfoStatus": [],
+     "stationName": "大門(東京都)",
+     "railNameExcludingDestination": "都営浅草線",
+     "railName": "都営浅草線・青砥行",
+     "stopStationList": [
+      {
+       "name": "新橋",
+       "departureTime": "09:37"
+      },
+      {
+       "name": "東銀座",
+       "departureTime": "09:39"
+      },
+      {
+       "name": "宝町(東京都)",
+       "departureTime": "09:40"
+      },
+      {
+       "name": "日本橋(東京都)",
+       "departureTime": "09:42"
+      },
+      {
+       "name": "人形町",
+       "departureTime": "09:44"
+      },
+      {
+       "name": "東日本橋",
+       "departureTime": "09:46"
+      },
+      {
+       "name": "浅草橋",
+       "departureTime": "09:47"
+      },
+      {
+       "name": "蔵前",
+       "departureTime": "09:49"
+      },
+      {
+       "name": "浅草",
+       "departureTime": "09:51"
+      }
+     ],
+     "destination": "青砥行",
+     "timeInfo": [
+      {
+       "time": "09:32",
+       "type": 2
+      },
+      {
+       "time": "09:35",
+       "type": 1
+      }
+     ]
+    },
+    {
+     "isLandmark": false,
+     "ridingPositionInfo": null,
+     "diaInfoStatus": null,
+     "stationName": "本所吾妻橋",
+     "railNameExcludingDestination": "徒歩5分",
+     "railName": "徒歩5分",
+     "stopStationList": null,
+     "destination": null,
+     "timeInfo": [
+      {
+       "time": "09:52",
+       "type": 2
+      },
+      {
+       "time": "09:54",
+       "type": 1
+      }
+     ]
+    },
+    {
+     "isLandmark": true,
+     "ridingPositionInfo": null,
+     "diaInfoStatus": null,
+     "stationName": "東京スカイツリー",
+     "railNameExcludingDestination": "徒歩5分",
+     "railName": "徒歩5分",
+     "stopStationList": null,
+     "destination": null,
+     "timeInfo": [
+      {
+       "time": "09:59",
+       "type": 3
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "summaryInfo": {
+    "departureTime": "09:18",
+    "arrivalTime": "09:56",
+    "totalTime": "38分",
+    "transferCount": "0"
+   },
+   "edgeInfoList": [
+    {
+     "isLandmark": true,
+     "ridingPositionInfo": null,
+     "diaInfoStatus": null,
+     "stationName": "東京タワー",
+     "railNameExcludingDestination": "徒歩11分",
+     "railName": "徒歩11分",
+     "stopStationList": null,
+     "destination": null,
+     "timeInfo": [
+      {
+       "time": "09:18",
+       "type": 3
+      }
+     ]
+    },
+    {
+     "isLandmark": false,
+     "ridingPositionInfo": {
+      "departure": [
+       "2",
+       "番線"
+      ],
+      "arrival": [
+       "2",
+       "番線"
+      ],
+      "position": [
+       "[8両] 前"
+      ]
+     },
+     "diaInfoStatus": [],
+     "stationName": "大門(東京都)",
+     "railNameExcludingDestination": "都営浅草線",
+     "railName": "都営浅草線・京成高砂行",
+     "stopStationList": [
+      {
+       "name": "新橋",
+       "departureTime": "09:34"
+      },
+      {
+       "name": "東銀座",
+       "departureTime": "09:36"
+      },
+      {
+       "name": "宝町(東京都)",
+       "departureTime": "09:37"
+      },
+      {
+       "name": "日本橋(東京都)",
+       "departureTime": "09:39"
+      },
+      {
+       "name": "人形町",
+       "departureTime": "09:41"
+      },
+      {
+       "name": "東日本橋",
+       "departureTime": "09:43"
+      },
+      {
+       "name": "浅草橋",
+       "departureTime": "09:44"
+      },
+      {
+       "name": "蔵前",
+       "departureTime": "09:46"
+      },
+      {
+       "name": "浅草",
+       "departureTime": "09:48"
+      }
+     ],
+     "destination": "京成高砂行",
+     "timeInfo": [
+      {
+       "time": "09:29",
+       "type": 2
+      },
+      {
+       "time": "09:32",
+       "type": 1
+      }
+     ]
+    },
+    {
+     "isLandmark": false,
+     "ridingPositionInfo": null,
+     "diaInfoStatus": null,
+     "stationName": "本所吾妻橋",
+     "railNameExcludingDestination": "徒歩5分",
+     "railName": "徒歩5分",
+     "stopStationList": null,
+     "destination": null,
+     "timeInfo": [
+      {
+       "time": "09:49",
+       "type": 2
+      },
+      {
+       "time": "09:51",
+       "type": 1
+      }
+     ]
+    },
+    {
+     "isLandmark": true,
+     "ridingPositionInfo": null,
+     "diaInfoStatus": null,
+     "stationName": "東京スカイツリー",
+     "railNameExcludingDestination": "徒歩5分",
+     "railName": "徒歩5分",
+     "stopStationList": null,
+     "destination": null,
+     "timeInfo": [
+      {
+       "time": "09:56",
+       "type": 3
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "summaryInfo": {
+    "departureTime": "09:01",
+    "arrivalTime": "09:57",
+    "totalTime": "56分",
+    "transferCount": "1"
+   },
+   "edgeInfoList": [
+    {
+     "isLandmark": true,
+     "ridingPositionInfo": null,
+     "diaInfoStatus": null,
+     "stationName": "東京タワー",
+     "railNameExcludingDestination": "徒歩7分",
+     "railName": "徒歩7分",
+     "stopStationList": null,
+     "destination": null,
+     "timeInfo": [
+      {
+       "time": "09:01",
+       "type": 3
+      }
+     ]
+    },
+    {
+     "isLandmark": false,
+     "ridingPositionInfo": {
+      "departure": [
+       "1",
+       "番線"
+      ],
+      "arrival": [
+       "2",
+       "番線"
+      ],
+      "position": [
+       "[8両] 中 後"
+      ]
+     },
+     "diaInfoStatus": [],
+     "stationName": "赤羽橋",
+     "railNameExcludingDestination": "都営大江戸線",
+     "railName": "都営大江戸線・大門・両国方面",
+     "stopStationList": [
+      {
+       "name": "大門(東京都)",
+       "departureTime": "09:17"
+      },
+      {
+       "name": "汐留",
+       "departureTime": "09:19"
+      },
+      {
+       "name": "築地市場",
+       "departureTime": "09:21"
+      },
+      {
+       "name": "勝どき",
+       "departureTime": "09:25"
+      },
+      {
+       "name": "月島",
+       "departureTime": "09:26"
+      },
+      {
+       "name": "門前仲町",
+       "departureTime": "09:29"
+      }
+     ],
+     "destination": "大門・両国方面",
+     "timeInfo": [
+      {
+       "time": "09:08",
+       "type": 2
+      },
+      {
+       "time": "09:14",
+       "type": 1
+      }
+     ]
+    },
+    {
+     "isLandmark": false,
+     "ridingPositionInfo": {
+      "departure": [
+       "2",
+       "番線"
+      ],
+      "arrival": [
+       "2",
+       "番線"
+      ],
+      "position": [
+       "[10両] 前 中 後"
+      ]
+     },
+     "diaInfoStatus": [],
+     "stationName": "清澄白河",
+     "railNameExcludingDestination": "東京メトロ半蔵門線",
+     "railName": "東京メトロ半蔵門線・押上行",
+     "stopStationList": [
+      {
+       "name": "住吉(東京都)",
+       "departureTime": "09:42"
+      },
+      {
+       "name": "錦糸町",
+       "departureTime": "09:44"
+      }
+     ],
+     "destination": "押上行",
+     "timeInfo": [
+      {
+       "time": "09:31",
+       "type": 2
+      },
+      {
+       "time": "09:38",
+       "type": 1
+      }
+     ]
+    },
+    {
+     "isLandmark": false,
+     "ridingPositionInfo": null,
+     "diaInfoStatus": null,
+     "stationName": "押上",
+     "railNameExcludingDestination": "徒歩2分",
+     "railName": "徒歩2分",
+     "stopStationList": null,
+     "destination": null,
+     "timeInfo": [
+      {
+       "time": "09:46",
+       "type": 2
+      },
+      {
+       "time": "09:55",
+       "type": 1
+      }
+     ]
+    },
+    {
+     "isLandmark": true,
+     "ridingPositionInfo": null,
+     "diaInfoStatus": null,
+     "stationName": "東京スカイツリー",
+     "railNameExcludingDestination": "徒歩2分",
+     "railName": "徒歩2分",
+     "stopStationList": null,
+     "destination": null,
+     "timeInfo": [
+      {
+       "time": "09:57",
+       "type": 3
+      }
+     ]
+    }
+   ]
+  }
+ ],
+ "otherQueryInfo": {
+  "fromList": [
+   {
+    "value": "35.65872867,139.7454329,東京タワー",
+    "label": "東京タワー(東京都港区)",
+    "gid": "F3sftpjIhSg",
+    "name": "東京タワー"
+   },
+   {
+    "value": "35.6575731,139.744485,タイムズ 東京タワーサイド第2",
+    "label": "タイムズ 東京タワーサイド第2(東京都港区)",
+    "gid": "sLw3Qi-juoI",
+    "name": "タイムズ 東京タワーサイド第2"
+   },
+   {
+    "value": "35.6578576,139.745579,タイムズ 東京タワースタジオ前",
+    "label": "タイムズ 東京タワースタジオ前(東京都港区)",
+    "gid": "FISsxno8xck",
+    "name": "タイムズ 東京タワースタジオ前"
+   }
+  ],
+  "toList": [
+   {
+    "value": "35.71006611,139.8107016,東京スカイツリー",
+    "label": "東京スカイツリー(東京都墨田区)",
+    "gid": "ORjsgbkXNpM",
+    "name": "東京スカイツリー"
+   },
+   {
+    "value": "35.709675,139.810181,タイムズ 東京スカイツリータウン立体駐車場",
+    "label": "タイムズ 東京スカイツリータウン立体駐車場(東京都墨田区)",
+    "gid": "dxwiuprqQr2",
+    "name": "タイムズ 東京スカイツリータウン立体駐車場"
+   },
+   {
+    "value": "35.710836,139.812919,タイムズ 東京スカイツリータウン地下駐車場",
+    "label": "タイムズ 東京スカイツリータウン地下駐車場(東京都墨田区)",
+    "gid": "cb81mdedWb6",
+    "name": "タイムズ 東京スカイツリータウン地下駐車場"
+   }
+  ]
+ }
+}
